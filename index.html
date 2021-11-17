@@ -1,0 +1,54 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tip_Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main">
+        <h1 id="h1">Tip Calculator</h1>
+
+        <div class="div_lable">
+            <label class="lable">Bill amount</label>
+            <input type="text" class="input"  placeholder="Enter billing amount" id="bill_amount">
+            <br>
+            <label class="lable">Tip percentage</label>
+            <input type="text" class="input"  placeholder="Enter tip percentage (%)" id="tip_percent">
+            <br>
+            <label class="lable">Tip amount</label>
+            <input type="text" class="input"  id="tip_amount" disabled>
+            <br>
+            <label class="lable">Total amount</label>
+            <input type="text" class="input"  id="total_amount" disabled>
+            <br>
+
+            <button class="btn" onclick="tipCalculator()">Calculate</button>
+        </div>
+    </main>
+    <script>
+
+        const tipCalculator = () => 
+    {
+        let Billing_amount = document.getElementById('bill_amount').value;
+
+        let tip_per = document.getElementById('tip_percent').value;
+
+        let tip =   Billing_amount * (tip_per / 100);
+       
+        let TotalAmount = tip +  Number(Billing_amount);
+       
+        document.getElementById('tip_amount').value = tip;
+
+        document.getElementById('total_amount').value = TotalAmount;
+
+        
+    } 
+
+    </script>
+
+  
+
+</body>
+</html>

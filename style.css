@@ -1,0 +1,42 @@
+*{
+    background: aquamarine ;
+}
+.main{
+    margin-top: 100px;
+
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     
+}
+#h1{
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.btn{
+    border:black;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #00b847;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.div_lable{
+   background:blueviolet;
+    padding: 50px;
+}
+.lable{
+    display: block;
+    background: blueviolet;
+    text-transform: capitalize;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.input{
+    width: 300px;
+    padding-top:10px;
+}
